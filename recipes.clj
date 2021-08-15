@@ -1,6 +1,7 @@
 (def recipes
   {
-   :a-test {:ingredients {:a-test 10}
+   :a-test {:ingredients {:a-test 10
+                          }
             :portions 2}
    
    :gohan {:ingredients {:japanese-rice 0.3}

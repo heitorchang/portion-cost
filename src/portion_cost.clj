@@ -1,8 +1,10 @@
 ;; Given a map of ingredient prices per unit, compute the cost of a portion of a recipe
 
+(ns portion-cost)
+
 (require '[clojure.string :as string])
 
-(load "price-list")
+(load "price_list")
 (load "recipes")
 
 (defn list-recipes []
@@ -49,6 +51,6 @@
     total))
 
 (defn recipes-cost []
-  (let [costs (map portion-cost-only recipes)]
+  (let [costs (map portion-cost-only (keys recipes))]
     (doseq [cost costs]
       (println cost))))

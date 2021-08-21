@@ -1,8 +1,19 @@
 (def recipes
-  {
+  { ; keep in alphabetical order
    :a-test {:ingredients {:a-test 10
                           }
             :portions 2}
+
+   :coq-au-vin {:ingredients {:chicken-breast 0.7
+                              :onion 0.2
+                              :bacon 0.1
+                              :white-mushroom 0.2
+                              :flour 0.02
+                              :butter 0.02
+                              :wine 0.15
+                              :corn-oil 0.02
+                              :garlic 0.05}
+                :portions 4}
    
    :gohan {:ingredients {:japanese-rice 0.3}
            :portions 4}

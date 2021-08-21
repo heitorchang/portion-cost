@@ -20,6 +20,16 @@
   [recipe-ingredient]
   (* (*price-list* (first recipe-ingredient)) (second recipe-ingredient)))
 
+(defn portion-cost-only [recipe-name]
+  (let [recipe (recipes recipe-name)
+        ingredients (recipe :ingredients)
+        portions (recipe :portions)
+        recipe-ingredient-costs (map ingredient-and-cost ingredients)
+        portion-ingredient-costs (map #(list (first %) (format "R$ %.2f" (/ (second %) portions 1.0))) recipe-ingredient-costs)
+        costs-only (map ingredient-cost ingredients)
+        total (format " R$ %.2f" (/ (reduce + costs-only) portions 1.0))]
+    (str recipe-name total)))
+
 (defn portion-cost
   "Recipe should be a map with keys :ingredients (also a map, with ingredient names as keys and amounts as values)
   and :portions, indicating the number of portions that the given ingredients yield.
@@ -37,3 +47,8 @@
     (println (string/join "\n" portion-ingredient-costs))
     (println)
     total))
+
+(defn recipes-cost []
+  (let [costs (map portion-cost-only recipes)]
+    (doseq [cost costs]
+      (println cost))))

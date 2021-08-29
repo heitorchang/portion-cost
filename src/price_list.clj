@@ -1,8 +1,9 @@
 (def ^:dynamic *price-list*
   { ; keep in alphabetical order
-   :a-test 12 ;kg
+   :a-test 22 ;kg
 
    :bacon 50 ; /kg
+   :banana 4 ; /kg
    :beans 8 ; /kg Procon: 6.93
    :beef-cubes 32 ; /kg Procon: 36.10
    :bell-pepper 12 ; /kg, green
@@ -18,6 +19,7 @@
    :corn-oil (/ 13.99 0.9) ; /l
    :cornstarch (/ 11 0.5) ; /kg
    :egg (/ 16 20) ; /unit Procon: 0.70
+   :french-bread 12.5 ; /kg Procon: 13.22
    :flour 3.8 ; /kg, wheat Procon: 3.84
    :garlic 27 ; /kg Procon: 29.56
    :ground-beef 32 ; /kg Procon: 36.10

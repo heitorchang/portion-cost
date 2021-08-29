@@ -4,6 +4,24 @@
                           }
             :portions 2}
 
+   :cesta-basica-dieese {:ingredients
+                         {
+                          :chicken-breast 6
+                          :milk 15
+                          :beans 4.5
+                          :rice 3
+                          :flour 1.5
+                          :potato 6
+                          :tomato 9
+                          :french-bread 6
+                          :coffee 0.6
+                          :banana 5
+                          :sugar 3
+                          :margarine 1.5
+                          :butter 0.9
+                          }
+                         :portions 1}
+
    :coq-au-vin {:ingredients {:chicken-breast 0.7
                               :onion 0.2
                               :bacon 0.1

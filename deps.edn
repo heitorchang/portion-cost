@@ -1,2 +1,6 @@
 {:deps
  {org.clojure/clojure {:mvn/version "1.10.3"}}}
+
+;; (require '[portion-cost :as pc])
+;; (pc/portion-cost :rice-and-beans)
+;; (pc/*price-list* :butter)

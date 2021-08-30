@@ -6,19 +6,34 @@
 
    :cesta-basica-dieese {:ingredients
                          {
-                          :chicken-breast 6
-                          :milk 15
-                          :beans 4.5
-                          :rice 3
-                          :flour 1.5
-                          :potato 6
-                          :tomato 9
-                          :french-bread 6
-                          :coffee 0.6
-                          :banana 5
-                          :sugar 3
+                          :rice 20
+                          :beans 3
+                          :sugar 2.5
+                          :coffee 1.5
+                          :flour 2
+                          :manioc-flour 0.5
+                          :potato 4
+                          :onion 2
+                          :garlic 0.2
+                          :egg 24
                           :margarine 1.5
-                          :butter 0.9
+                          :tomato-paste 1.02
+                          :soybean-oil 2.7
+                          :powdered-milk 0.4
+                          :pasta 2.5
+                          :steak 4
+                          :ground-beef 3
+                          :chicken-whole 7
+                          :hot-dog-sausage 1
+                          :sausage 2
+                          :mozzarella 1
+                          :ham 0.5
+                          :sliced-bread 1.5
+                          :french-bread 6
+                          :milk 16
+                          :cookies-cornstarch 0.8
+                          :cookies 0.6
+                          :crackers 0.8
                           }
                          :portions 1}
 

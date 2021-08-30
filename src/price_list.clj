@@ -4,8 +4,8 @@
 
    :bacon 50 ; /kg
    :banana 4 ; /kg
-   :beans 8 ; /kg Procon: 6.93
-   :beef-cubes 32 ; /kg Procon: 36.10
+   :beans 6.93 ; /kg Procon: 6.93
+   :beef-cubes 36.1 ; /kg Procon: 36.10
    :bell-pepper 12 ; /kg, green
    :bologna 20 ; /kg
    :broccoli 50 ; /kg
@@ -13,16 +13,19 @@
    :canned-tomatoes (/ 7 0.4) ; /kg
    :carrot 3.5 ; /kg
    :chicken-breast 24 ; /kg, breast, boneless thigh
-   :chicken-whole 9 ; /kg Procon: 9.62
+   :chicken-whole 9.62 ; /kg Procon: 9.62
    :coffee 9 ; /kg Procon: 18.18
    :condensed-milk (/ 5.75 0.395) ; /kg
+   :cookies-cornstarch 12.7 ; /kg Procon: 12.70
+   :cookies 12.13 ; /kg Procon: 12.13
    :corn-oil (/ 13.99 0.9) ; /l
    :cornstarch (/ 11 0.5) ; /kg
+   :crackers 11 ; /kg Procon: 11.00
    :egg (/ 16 20) ; /unit Procon: 0.70
    :french-bread 12.5 ; /kg Procon: 13.22
    :flour 3.8 ; /kg, wheat Procon: 3.84
    :garlic 27 ; /kg Procon: 29.56
-   :ground-beef 32 ; /kg Procon: 36.10
+   :ground-beef 36.1 ; /kg Procon: 36.10
    :ham 28 ; /kg Procon: 28.64
    :heavy-cream (/ 6.07 0.3) ; /kg
    :hondashi (/ 40.0 0.5) ; /kg
@@ -39,6 +42,7 @@
    :parmesan-cheese (/ 22.5 0.245) ; /kg
    :pasta (/ 6.79 0.5) ; /kg Procon: 5.78
    :pork-loin 30 ; /kg
+   :powdered-milk 32 ; /kg Procon: 31.97
    :potato 4 ; /kg Procon: 3.15
    :radish 3 ; /kg   
    :rice (/ 25 5) ; /kg Procon: 4.11, 20.56 for 5kg

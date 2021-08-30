@@ -43,10 +43,10 @@
         ingredients (recipe :ingredients)
         portions (recipe :portions)
         recipe-ingredient-costs (map ingredient-and-cost ingredients)
-        portion-ingredient-costs (map #(list (first %) (format "R$ %.2f" (/ (second %) portions 1.0))) recipe-ingredient-costs)
+        portion-ingredient-costs (map #(list (str (first %)) (ingredients (first %)) (format "R$ %.2f" (double (*price-list* (first %)))) (format "R$ %.2f" (/ (second %) portions 1.0))) recipe-ingredient-costs)
         costs-only (map ingredient-cost ingredients)
         total (format "Total: R$ %.2f" (/ (reduce + costs-only) portions 1.0))]
-    (println (string/join "\n" portion-ingredient-costs))
+    (println (string/join "\n" (map #(string/join ";" %) portion-ingredient-costs)))
     (println)
     total))
 

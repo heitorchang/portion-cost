@@ -8,11 +8,13 @@
     bell-pepper 12 ; /kg, green
     bologna 20 ; /kg
     broccoli 50 ; /kg
-    butter 47.5 ; /kg
+    brown-sugar 20 ; /kg
+    butter 57.95 ; /kg
     canned-tomatoes 17.5 ; /kg
     carrot 3.5 ; /kg
     chicken-breast 24 ; /kg, breast, boneless thigh
     chicken-whole 9.62 ; /kg Procon: 9.62
+    chocolate 63.2 ; /kg
     coffee 9 ; /kg Procon: 18.18
     condensed-milk 14.55 ; /kg
     cookies-cornstarch 12.7 ; /kg Procon: 12.70
@@ -22,7 +24,7 @@
     crackers 11 ; /kg Procon: 11.00
     egg 0.8 ; /unit Procon: 0.70
     french-bread 12.5 ; /kg Procon: 13.22
-    flour 3.8 ; /kg, wheat Procon: 3.84
+    flour 6.0 ; /kg, wheat Procon: 3.84
     garlic 27 ; /kg Procon: 29.56
     ground-beef 36.1 ; /kg Procon: 36.10
     ham 28 ; /kg Procon: 28.64
@@ -49,7 +51,7 @@
     soybean-oil 9 ; /l Procon: 8.58
     sliced-bread 13 ; /kg Procon: 10.76
     steak 42 ; /kg, alcatra Procon: 44.86
-    sugar 3.2 ; /kg Procon: 3.45
+    sugar 4.0 ; /kg Procon: 3.45
     sweet-potato 2.99 ; /kg
     tomato 8 ; /kg
     tomato-paste 25 ; /kg Procon: 13.67
@@ -65,6 +67,16 @@
                   (wakame 0.05)
                   (miso 0.03)
                   (hondashi 0.01)))
+    
+    chocolate-chip-cookies
+    (portions 24
+     ingredients ((butter 0.15)
+                  (sugar 0.1)
+                  (brown-sugar 0.1)
+                  (egg 0.1)
+                  (flour 0.3)
+                  (chocolate 0.3)))
+                  
     rice-and-beans
     (portions 2
      ingredients ((rice 0.5)

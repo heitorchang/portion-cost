@@ -38,6 +38,7 @@
     milk 5.39 ; /l Procon: 3.95
     miso 30 ; /kg
     mozzarella 40 ; /kg Procon: 43.04
+    oat 10 ; /kg
     olive-oil 56 ; /l
     onion 3.2 ; /kg Procon: 3.26
     parmesan-cheese 91.8 ; /kg
@@ -45,7 +46,8 @@
     pork-loin 30 ; /kg
     powdered-milk 32 ; /kg Procon: 31.97
     potato 4 ; /kg Procon: 3.15
-    radish 3 ; /kg   
+    radish 3 ; /kg
+    raisin 30 ; /kg
     rice 5 ; /kg Procon: 4.11, 20.56 for 5kg
     sausage 18 ; /kg Procon: 21.15
     soybean-oil 9 ; /l Procon: 8.58
@@ -71,12 +73,21 @@
     chocolate-chip-cookies
     (portions 24
      ingredients ((butter 0.15)
-                  (sugar 0.1)
-                  (brown-sugar 0.1)
+                  (sugar 0.09)
+                  (brown-sugar 0.09)
                   (egg 0.1)
                   (flour 0.3)
                   (chocolate 0.3)))
-                  
+
+    oatmeal-raisin-cookies
+    (portions 18
+     ingredients ((butter 0.1)
+                  (brown-sugar 0.16)
+                  (egg 0.05)
+                  (flour 0.15)
+                  (oat 0.125)
+                  (raisin 0.1)))
+    
     rice-and-beans
     (portions 2
      ingredients ((rice 0.5)
@@ -85,7 +96,9 @@
 (defun recipe-cost (recipe)
   (let ((portions (getf (getf *recipes* recipe) 'portions))
         (ingredients (getf (getf *recipes* recipe) 'ingredients)))
-    (reduce #'+
-            (mapcar #'(lambda (ingr) (/ (* (getf *price-list* (car ingr)) (cadr ingr)) portions))
-                    ingredients))))
-
+    (let ((total-cost (reduce
+                       #'+
+                       (mapcar #'(lambda (ingr) (* (getf *price-list* (car ingr)) (cadr ingr))) ingredients))))
+      (values
+       total-cost
+       (/ total-cost portions)))))

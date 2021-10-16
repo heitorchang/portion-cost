@@ -75,7 +75,7 @@
      ingredients ((butter 0.15)
                   (sugar 0.09)
                   (brown-sugar 0.09)
-                  (egg 0.1)
+                  (egg 2)
                   (flour 0.3)
                   (chocolate 0.3)))
 
@@ -83,7 +83,7 @@
     (portions 18
      ingredients ((butter 0.1)
                   (brown-sugar 0.16)
-                  (egg 0.05)
+                  (egg 1)
                   (flour 0.15)
                   (oat 0.125)
                   (raisin 0.1)))
